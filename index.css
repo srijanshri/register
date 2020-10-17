@@ -1,0 +1,213 @@
+body{
+	background-image: url("background.svg");
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    
+	
+}
+nav{
+	background-color: #fff;
+	height: 40px;
+	margin-top: -0.5em;
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	opacity: 1;
+}
+.logo{
+	padding-top: 5px;
+	height: 20px;
+	margin-top: -10px;
+	margin-top: 0.2em;
+	margin-left: 11.5em;
+}
+.container{
+	margin: 30px auto;
+	position: relative;
+	width: 840px;
+	height: 500px;
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 14px #51C3D85A;
+	border-radius: 20px;
+	opacity: 1;
+}
+
+.heading{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-48)/var(--unnamed-line-spacing-42) var(--unnamed-font-family-playfair-display);
+	letter-spacing: var(--unnamed-character-spacing-2-24);
+	color: var(--unnamed-color-2f509c);
+	text-align: center;
+	font: normal normal normal 34px Playfair Display;
+
+	color: #2F509C;
+	opacity: 1;
+	padding-top: 15px;
+}
+.sub-heading{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 12px/22px var(--unnamed-font-family-montserrat);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-697e93);
+	text-align: left;
+	font: normal normal normal 14px Montserrat;
+	letter-spacing: 0px;
+	color: #697E93;
+	opacity: 1;
+	margin-top: -2.5em;
+	text-align: center;
+}
+.name{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-montserrat);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-304a69);
+	text-align: left;
+	font: normal normal normal 12px;
+	letter-spacing: 0px;
+	color: #304A69;
+	opacity: 1;
+}
+#full-name{
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: none;
+	border-radius: 10px;
+	opacity: 1;
+	width: 250px;
+	height: 25px;
+	margin-bottom: 0.6em;
+}
+#user-name{
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: none;
+	border-radius: 10px;
+	opacity: 1;
+	width: 250px;
+	height: 25px;
+	margin-bottom: 0.6em;
+}
+.email-text{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-montserrat);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-304a69);
+	text-align: left;
+	font: normal normal normal 14px ;
+	letter-spacing: 0px;
+	color: #304A69;
+	opacity: 1;
+}
+#email{
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: none;
+	border-radius: 10px;
+	opacity: 1;
+	width: 200px;
+	height: 25px;
+	margin-bottom: 0.6em;
+}
+.user-form{
+	margin-left: 3em;
+}
+.date{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-montserrat);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-304a69);
+text-align: left;
+font: normal normal normal 14px ;
+letter-spacing: 0px;
+color: #304A69;
+opacity: 1;
+margin-left: 13em;
+}
+#dob{
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: none;
+border-radius: 10px;
+opacity: 1;
+width: 130px;
+	height: 25px;
+}
+.p-text{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-montserrat);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-304a69);
+text-align: left;
+font: normal normal normal 14px;
+letter-spacing: 0px;
+color: #304A69;
+opacity: 1;
+}
+#password{
+	background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: none;
+border-radius: 10px;
+opacity: 1;
+width: 250px;
+	height: 25px;
+	margin-bottom: 0.6em;
+}
+.cp-text{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-18) var(--unnamed-font-family-montserrat);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-304a69);
+text-align: left;
+font: normal normal normal 12px;
+letter-spacing: 0px;
+color: #304A69;
+opacity: 1;
+}
+#c-password{
+ background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: none;
+border-radius: 10px;
+opacity: 1;
+width: 250px;
+	height: 25px;
+	margin-bottom: 0.4em;
+}
+#remember-me{
+background: var(--unnamed-color-51c3d8) 0% 0% no-repeat padding-box;
+background: #51C3D8 0% 0% no-repeat padding-box;
+border-radius: 6px;
+opacity: 1;
+margin-top: -3em;
+}
+.remember-me-text{
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 13px/15px Arial;
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal normal 14px Arial;
+letter-spacing: 0px;
+color: #4F5E7B;
+opacity: 1;
+}
+.register{
+	margin-left: 3em;
+	margin-top: -1em;
+}
+.submit{
+	background: transparent linear-gradient(180deg, var(--unnamed-color-fed668) 0%, var(--unnamed-color-fea328) 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(180deg, #FED668 0%, #FEA328 100%) 0% 0% no-repeat padding-box;
+opacity: 1;
+ height: 45px;
+  width: 45px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  border: none;
+  margin-left: 30em;
+  margin-top: -14%;
+  float: right;
+  margin-right: 56%;
+
+}
+.fa-arrow-right{
+	color: white;
+	font-size: 20px;
+}
