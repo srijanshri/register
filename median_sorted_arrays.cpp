@@ -3,6 +3,9 @@
  *
  * Time Complexity : O(log(min(m, n)))  — satisfies O(log(m+n))
  * Space Complexity: O(1)
+ *
+ * Fix: sentinels and the even-case sum are kept in long long to prevent
+ * integer overflow when array values are near INT_MIN / INT_MAX.
  */
 
 #include <vector>
@@ -17,8 +20,8 @@ public:
         vector<int>& A = (nums1.size() <= nums2.size()) ? nums1 : nums2;
         vector<int>& B = (nums1.size() <= nums2.size()) ? nums2 : nums1;
 
-        int m = A.size();
-        int n = B.size();
+        int m = static_cast<int>(A.size());
+        int n = static_cast<int>(B.size());
         int half = (m + n + 1) / 2;
 
         int lo = 0, hi = m;
@@ -27,16 +30,19 @@ public:
             int i = (lo + hi) / 2;   // partition in A
             int j = half - i;         // partition in B
 
-            int maxLeft1  = (i > 0) ? A[i - 1] : INT_MIN;
-            int minRight1 = (i < m) ? A[i]     : INT_MAX;
-            int maxLeft2  = (j > 0) ? B[j - 1] : INT_MIN;
-            int minRight2 = (j < n) ? B[j]     : INT_MAX;
+            // Use long long sentinels to avoid overflow in comparisons
+            // and in the even-case sum below
+            long long maxLeft1  = (i > 0) ? A[i - 1] : LLONG_MIN;
+            long long minRight1 = (i < m) ? A[i]     : LLONG_MAX;
+            long long maxLeft2  = (j > 0) ? B[j - 1] : LLONG_MIN;
+            long long minRight2 = (j < n) ? B[j]     : LLONG_MAX;
 
             if (maxLeft1 <= minRight2 && maxLeft2 <= minRight1) {
                 // Valid partition found
                 if ((m + n) % 2 == 1)
-                    return max(maxLeft1, maxLeft2);
+                    return static_cast<double>(max(maxLeft1, maxLeft2));
                 else
+                    // Safe: actual int values fit in long long, no overflow
                     return (max(maxLeft1, maxLeft2) +
                             min(minRight1, minRight2)) / 2.0;
 
